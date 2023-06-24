@@ -1,0 +1,339 @@
+*{
+
+    /* font-family: 'Sacramento', cursive; */
+    /* font-family: 'Cookie', cursive; */
+    /* font-family: 'Dancing Script', cursive; */
+    /* font-family: 'Great Vibes', cursive; */
+    font-family: 'Cookie', cursive;
+        /* font-family: 'Sacramento', cursive; */
+    /* font-family: 'Playfair Display', serif; */
+    /* font-family: 'Roboto Slab', serif; */
+    color: white;
+    
+}
+body{
+    background-color: rgb(53, 54, 51);
+}
+.parent{
+    background-color: rgb(53, 54, 51);
+    padding: 60px;
+    height: 100%;
+}
+
+.parentMain{
+    display: block;
+
+}
+.parentMain2{
+    display: flex;
+    text-align: center;
+    margin: auto;
+}
+.show{
+    display: block;
+}
+.hide{
+    display: none;
+}
+.parentMain2{
+    /* display: none; */
+}
+header{
+    display: flex;
+    justify-content: space-between;
+}
+.heading{
+    color: red;
+    margin-left: 4px;
+}
+.leftHeader,.rightHeader{
+    font-size: 30px;
+    display: flex;
+}
+
+.addSymbol{
+    border-radius: 50%;
+    background-color: white;
+    color: green;
+   padding-bottom: 14px;
+    height: 50px;
+  
+    width: 50px;
+    text-align: center;
+
+}
+.noItemInToDoList{
+
+    font-size: 39px;
+    color: red;
+
+}
+.parentBack{
+    /* margin: auto; */
+   
+    position: fixed;
+  left: 40%;
+   top: 30%;
+}
+
+.taskPopUp,.taskPopUp2{
+    height: 250px;
+    width: 450px;
+    background-color: white;
+    border-radius: 15px;
+    margin: auto;
+    position: fixed;
+    display: none;
+}
+.headingAddNewTaskPop,.headingAddNewTaskPop2{
+    color: red;
+   
+    padding-top: 50px;
+    text-align: center;
+}
+.inputAddNewTask,.inputAddNewTask2{
+    color: red;
+    text-align: center;
+}
+
+input{
+    text-align: center;
+    margin: auto;
+    border: 2px solid red;
+    border-radius: 5px;
+    height: 32px;
+    color: aqua;
+    width: 300px;
+    font-weight: 800;
+    font-size: 32px;
+}
+.addOrCloseButtonPop,.addOrCloseButtonPop2{
+    text-align: center;
+
+    margin: auto;
+  
+    border-radius: 5px;
+    height: 32px;
+    width: 300px;
+}
+
+button{
+  border: 2px solid red;
+  color: brown;
+  height: 32px;
+  padding: 2px;
+  margin: 15px;
+  font-size: 25px;
+  background-color: aqua;
+  border-radius: 5px;
+  width: 100px;
+}
+h1{
+    font-family: 'Cookie', cursive;
+}
+.cardContainer{
+    display: flex; 
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.taskContainer{
+    min-height: 400px;
+    width: 280px;
+    color: red;
+  
+    border-radius: 10px;
+    background-color: white;
+    border: 2px solid greenyellow;
+    margin: 20px 2px;
+
+}
+.taskHeading{
+    text-align: center;
+    font-size: 24px;
+    padding: 3px;
+    color: red;
+    font-weight: 800;
+}
+.subTaskContainer{
+    min-height: 260px;
+}
+.removeTaskContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    height: 60px;
+    padding: 4px;
+}
+.removeTaskImage{
+   margin: 5px; 
+}
+.addSubTaskImage{
+    margin: 5px;
+}
+.parentBlur{
+    filter: blur(25px);
+}
+.subtaskParent{
+    /* display: flex;
+    height: 10px; */
+    width: 260px;
+    text-align: center;
+    justify-content: space-between;
+    color: cadetblue;
+    font-size: 24px;
+    padding: 4px;
+    box-sizing: border-box;
+}
+.subTaskTitle{
+    color: cadetblue;
+    font-size: 32px;
+    margin-left: 20px;
+    margin-top: 0.1px;
+  
+
+}
+.subTaskMarker{
+    text-align: center;
+    padding-bottom: 10px;
+  
+}
+.marked{
+text-decoration: line-through;
+}
+.parentDetails{
+    display: none;
+}
+.heading2{
+    font-size: 66px;
+}
+.todoDetailsPageBack{
+    padding-top: 10px;
+}
+
+#cardSpecification{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 250px;
+}
+.auto{
+    display: flex;
+    justify-content: center;
+    margin-left: -10%;
+   
+}
+
+
+
+  /* mobileView start  */
+@media (min-width:200px) and (max-width:750px){
+    .parent{
+        /* background-color: rgb(127, 255, 8); */
+    /* justify-content: center; */
+        padding: 4%;
+        height: 100%;
+    }
+    .cardContainer{
+        display: flex; 
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .leftHeader,.rightHeader{
+        font-size: 16px;
+        display: flex;
+        
+    }
+    .hide{
+        display: none;
+    }
+    header{
+    display: flex;
+    justify-content: space-around;
+}
+    .noItemInToDoList{
+
+        font-size: 16px;
+        color: red;
+    
+    }
+  
+.addSymbol{
+    border-radius: 50%;
+    background-color: white;
+    color: green;
+   padding-bottom: 14px;
+    height: 19px;
+  
+    width: 15px;
+    text-align: center;
+
+}
+.heading{
+    color: red;
+    margin-left: 1px;
+}
+.parentBack{
+   
+    position: fixed;
+  left: 5%;
+   top: 20%;
+}
+
+.taskPopUp,.taskPopUp2{
+    height: 250px;
+    width: 90%;
+}
+input{
+    
+    height: 28px;
+    color: aqua;
+    width: 80%;
+    font-weight: 800;
+    font-size: 26px;
+    margin-bottom: 20px;
+}
+.addOrCloseButtonPop,.addOrCloseButtonPop2{
+   
+    height: 32px;
+    width: 260px;
+}
+
+button{
+
+  height: 32px;
+  padding: 2px;
+  margin: 5px;
+  font-size: 25px;
+
+}
+.parentMain2{
+    display: flex;
+    text-align: center;
+    margin: auto;
+    height: 100px;
+    width: 100%;
+}
+.backImg{
+    display: none;
+}
+.leftHeader{
+    margin-left: -35px;
+}
+.middleHeader{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.heading2{
+    margin-top: -10px;
+}
+.addSymbol2{
+    margin-right: -30px;
+}
+.cardSpecification{
+    margin-left: -220px;
+}
+.auto{
+margin-left: -65%;
+}
+}

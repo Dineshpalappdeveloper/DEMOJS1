@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cookie&family=Dancing+Script:wght@600&family=Great+Vibes&family=Playfair+Display:ital,wght@1,500&family=Roboto+Slab:wght@100;200;500&family=Sacramento&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./Style.css" />
+  </head>
+  <body>
+    <div class="parent">
+      <div class="parentMain">
+        <header>
+          <div class="leftHeader">
+            <h1>Task</h1>
+            <h1 class="heading">List</h1>
+          </div>
+          <div class="rightHeader">
+            <h1 class="addSymbol">+</h1>
+            <h1 class="heading">Add Item</h1>
+          </div>
+        </header>
+        <div class="cardContainer">
+          <h1 class="noItemInToDoList">No items in the todo list</h1>
+        </div>
+      </div>
+      <div class="parentMain2 hide">
+        <header>
+          <div class="leftHeader">
+            <h1><img src="./back (1).png" alt="back" class="backImg" /></h1>
+            <h2 class="heading todoDetailsPageBack">Back</h2>
+          </div>
+          <div class="middleHeader">
+            <h1 class="heading heading2"></h1>
+          </div>
+          <div class="rightHeader">
+            <h1 class="addSymbol addSymbol2">+</h1>
+          </div>
+        </header>
+        <div class="auto"><div id="cardSpecification"></div></div>
+      </div>
+    </div>
+    <div class="parentBack">
+      <div class="taskPopUp">
+        <h1 class="headingAddNewTaskPop">Add New Item</h1>
+        <div class="inputAddNewTask">
+          <input type="text" placeholder="Add New Item" id="taskInput" />
+        </div>
+        <div class="addOrCloseButtonPop">
+          <button id="taskAdd">Add</button>
+          <button id="taskClose">Close</button>
+        </div>
+      </div>
+      <div class="taskPopUp2">
+        <h1 class="headingAddNewTaskPop2">Add New Task</h1>
+        <div class="inputAddNewTask2">
+          <input type="text" placeholder="Add New Task" id="taskInput2" />
+        </div>
+        <div class="addOrCloseButtonPop2">
+          <button id="taskAdd2">Add</button>
+          <button id="taskClose2">Close</button>
+        </div>
+      </div>
+    </div>
+    <script src="./index.js"></script>
+    <div></div>
+  </body>
+</html>
